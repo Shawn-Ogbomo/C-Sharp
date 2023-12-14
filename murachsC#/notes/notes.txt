@@ -1,0 +1,11 @@
+//MURACHS C#
+
+//CH 1
+
+
+
+//CH2
+The form designer allows you to design a form 
+and implement it at the same time. Sketching the interface
+on paper is paltry.
+
