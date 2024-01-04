@@ -57,6 +57,9 @@
     <EmbeddedResource Include="InvoiceTotal.aa.resx">
       <DependentUpon>InvoiceTotal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceTotal.en.resx">
+      <DependentUpon>InvoiceTotal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InvoiceTotal.resx">
       <DependentUpon>InvoiceTotal.cs</DependentUpon>
     </EmbeddedResource>
