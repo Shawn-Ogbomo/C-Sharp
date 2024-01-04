@@ -1,11 +1,27 @@
 //MURACHS C#
 
-//CH 1
-
-
-
 //CH2
 The form designer allows you to design a form 
 and implement it at the same time. Sketching the interface
 on paper is paltry.
 
+//Terms 
+template -  project template, contains many features that you may use in your project.
+            (windows forms app) contains many dependencies 
+
+label - text field in form. They contain many mutable 
+properties.
+
+text box - Contains text. comprises manifold properties
+
+button   - executes function implementation when clicked
+
+primary control - control that is used to set other components
+
+property  - settings for components
+
+tab order - Order in which component is highlighted when pressing the tab key
+
+focus     - component that is currently selected
+
+access key - alternative method of selecting / executing a component
