@@ -107,7 +107,8 @@ delete the statement
 
 - press tab twice to select option in the intelli-j completion list
 
-
-
+- To surround existing code with a code snippet, select the code, right-click on it, 
+and select the Surround With command from the resulting menu. Then, select the 
+appropriate snippet. 
 
 
