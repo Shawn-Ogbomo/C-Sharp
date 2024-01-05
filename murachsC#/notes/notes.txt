@@ -14,14 +14,100 @@ properties.
 
 text box - Contains text. comprises manifold properties
 
-button   - executes function implementation when clicked
+button - executes function implementation when clicked
 
 primary control - control that is used to set other components
 
-property  - settings for components
+property - settings for components
 
 tab order - Order in which component is highlighted when pressing the tab key
 
-focus     - component that is currently selected
+focus - component that is currently selected
 
 access key - alternative method of selecting / executing a component
+
+//CH3 
+object - region of computers memory. Requires a type and name
+eg, forms and controls 
+
+instantiation - instance of a class 
+
+object oriented programming - Using objects to solve problems
+
+properties - define the objects characteristics and data
+
+methods of an object- determine the operations that can be performed 
+by the object
+
+object event - signals sent by the object to your application
+that something has happened that ca be responded to 
+
+members of an object or class- properties, methods, and events 
+of an object or class
+
+class - the code that defines the characteristics of an object.
+A template for an object
+
+
+-When using the Form Designer, visual studio automatically generates
+ C# code that creates a new class based on the Form class. 
+ Then, when you run the project a form object is instantiated
+ from the new class 
+
+-When appending a control to a form visual studio automatically 
+generates C# code in the class for the form that instantiates
+a control object from the appropriate class and sets the control's
+default properties.
+
+-When moving or sizing a control, visual studio automatically sets
+the properties that specify the location and size of the control.
+
+-property window only sets the properties at the start of the application, 
+code allows you to alter the properties as an application is running
+
+this keyword - current object 
+
+- you will rarely have to refer to events since visual studio 
+automatically generates the code for working with events
+
+event handler - special type of method. Used to respond to an event
+
+event wiring - visual studio generates a statement that connects or
+wires the event handler to the event
+
+- you are most likely to create event handlers for the default events of form
+and controls
+
+- before you start a control for an event handler , you should always 
+set hte Name property of the control.
+
+if you dont visual studio will change the name of the object in the event wiring,
+but it wont change the name of the object in the method name
+
+- avoid modifying the method declaration that's generated for you when 
+you create an event handler.
+
+- you cannot simply delete an event handler once you've added it. 
+If you do, you will get an error when you try to run the application.
+This error will be displayed in an error list window, and it will indicate 
+that the event handler is missing.
+
+- to handle the load event for a form double click the form itself
+
+- event handlers are stored in the cs file for the form
+
+- most of the code that is generated when you design a form, including 
+the statement that wires the event to the event handler, is stored in the 
+Designers.cs file for the form. If necessary, you can open this file to 
+view or delete the event wiring 
+
+- if you delete an event handler, you must also delete the wiring for the 
+event. To do this, double click the error message in the error list and Then
+delete the statement
+
+- press tab twice to select option in the intelli-j completion list
+
+
+
+
+

@@ -65,7 +65,7 @@
             resources.ApplyResources(this.btnCalculate, "btnCalculate");
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // btnExit
             // 
@@ -74,7 +74,7 @@
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.button2_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtSubtotal
             // 

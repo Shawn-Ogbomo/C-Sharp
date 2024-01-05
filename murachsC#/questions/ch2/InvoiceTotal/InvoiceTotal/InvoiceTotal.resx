@@ -294,9 +294,6 @@
   <data name="txtDiscountPercent.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="txtDiscountPercent.Text" xml:space="preserve">
-    <value>10.0%</value>
-  </data>
   <data name="&gt;&gt;txtDiscountPercent.Name" xml:space="preserve">
     <value>txtDiscountPercent</value>
   </data>
@@ -318,9 +315,6 @@
   <data name="txtDiscountAmount.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="txtDiscountAmount.Text" xml:space="preserve">
-    <value>$22.50</value>
-  </data>
   <data name="&gt;&gt;txtDiscountAmount.Name" xml:space="preserve">
     <value>txtDiscountAmount</value>
   </data>
@@ -341,9 +335,6 @@
   </data>
   <data name="txtTotal.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="txtTotal.Text" xml:space="preserve">
-    <value>$202.50</value>
   </data>
   <data name="&gt;&gt;txtTotal.Name" xml:space="preserve">
     <value>txtTotal</value>
