@@ -80,20 +80,13 @@ namespace InvoiceTotal
 
         private void TxtMaxInvoice_TextChanged()
         {
-            if (totalLessDiscount > maxInvoice)
-            {
-                maxInvoice = totalLessDiscount;
-            }
-
-            txtMaxInvoice.Text = maxInvoice.ToString("c");
+            maxInvoice = Math.Max(totalLessDiscount, maxInvoice);
+            txtMaxInvoice.Text = Decimal.Round(maxInvoice, 2).ToString("c");
         }
 
         private void TxtMinInvoice_TextChanged()
         {
-            if (totalLessDiscount < minInvoice)
-            {
-                minInvoice = totalLessDiscount;
-            }
+            minInvoice = Math.Min(totalLessDiscount, minInvoice);
             txtMinInvoice.Text = Decimal.Round(minInvoice, 2).ToString("c");
         }
     }
