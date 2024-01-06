@@ -66,5 +66,13 @@ namespace InvoiceTotal
             invoiceCount = 0;
             total = 0;
         }
+
+        private void txtMaxInvoice_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtMinInvoice_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

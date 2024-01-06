@@ -48,6 +48,10 @@
             this.txtNumInvoices = new System.Windows.Forms.TextBox();
             this.txtTotalInvoices = new System.Windows.Forms.TextBox();
             this.txtInvoiceAverage = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtMinInvoice = new System.Windows.Forms.TextBox();
+            this.txtMaxInvoice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -187,6 +191,36 @@
             this.txtInvoiceAverage.ReadOnly = true;
             this.txtInvoiceAverage.TabStop = false;
             // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // txtMinInvoice
+            // 
+            this.txtMinInvoice.BackColor = System.Drawing.Color.DimGray;
+            this.txtMinInvoice.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtMinInvoice, "txtMinInvoice");
+            this.txtMinInvoice.Name = "txtMinInvoice";
+            this.txtMinInvoice.ReadOnly = true;
+            this.txtMinInvoice.TabStop = false;
+            this.txtMinInvoice.TextChanged += new System.EventHandler(this.txtMinInvoice_TextChanged);
+            // 
+            // txtMaxInvoice
+            // 
+            this.txtMaxInvoice.BackColor = System.Drawing.Color.DimGray;
+            this.txtMaxInvoice.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtMaxInvoice, "txtMaxInvoice");
+            this.txtMaxInvoice.Name = "txtMaxInvoice";
+            this.txtMaxInvoice.ReadOnly = true;
+            this.txtMaxInvoice.TabStop = false;
+            this.txtMaxInvoice.TextChanged += new System.EventHandler(this.txtMaxInvoice_TextChanged);
+            // 
             // InvoiceTotal
             // 
             this.AcceptButton = this.btnCalculate;
@@ -195,6 +229,10 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.CancelButton = this.btnExit;
+            this.Controls.Add(this.txtMaxInvoice);
+            this.Controls.Add(this.txtMinInvoice);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtInvoiceAverage);
             this.Controls.Add(this.txtTotalInvoices);
             this.Controls.Add(this.txtNumInvoices);
@@ -244,6 +282,10 @@
         private System.Windows.Forms.TextBox txtNumInvoices;
         private System.Windows.Forms.TextBox txtTotalInvoices;
         private System.Windows.Forms.TextBox txtInvoiceAverage;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtMinInvoice;
+        private System.Windows.Forms.TextBox txtMaxInvoice;
     }
 }
 
