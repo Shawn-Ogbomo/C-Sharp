@@ -39,6 +39,15 @@
             this.txtDiscountAmount = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtEnterSubtotal = new System.Windows.Forms.TextBox();
+            this.txtNumInvoices = new System.Windows.Forms.TextBox();
+            this.txtTotalInvoices = new System.Windows.Forms.TextBox();
+            this.txtInvoiceAverage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +72,7 @@
             resources.ApplyResources(this.btnCalculate, "btnCalculate");
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // btnExit
             // 
@@ -72,7 +81,7 @@
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // txtSubtotal
             // 
@@ -80,6 +89,8 @@
             this.txtSubtotal.ForeColor = System.Drawing.Color.LightPink;
             resources.ApplyResources(this.txtSubtotal, "txtSubtotal");
             this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.ReadOnly = true;
+            this.txtSubtotal.TabStop = false;
             // 
             // txtDiscountPercent
             // 
@@ -113,6 +124,69 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Gray;
+            this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // txtEnterSubtotal
+            // 
+            this.txtEnterSubtotal.BackColor = System.Drawing.Color.DimGray;
+            this.txtEnterSubtotal.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtEnterSubtotal, "txtEnterSubtotal");
+            this.txtEnterSubtotal.Name = "txtEnterSubtotal";
+            // 
+            // txtNumInvoices
+            // 
+            this.txtNumInvoices.BackColor = System.Drawing.Color.DimGray;
+            this.txtNumInvoices.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtNumInvoices, "txtNumInvoices");
+            this.txtNumInvoices.Name = "txtNumInvoices";
+            this.txtNumInvoices.ReadOnly = true;
+            this.txtNumInvoices.TabStop = false;
+            // 
+            // txtTotalInvoices
+            // 
+            this.txtTotalInvoices.BackColor = System.Drawing.Color.DimGray;
+            this.txtTotalInvoices.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtTotalInvoices, "txtTotalInvoices");
+            this.txtTotalInvoices.Name = "txtTotalInvoices";
+            this.txtTotalInvoices.ReadOnly = true;
+            this.txtTotalInvoices.TabStop = false;
+            // 
+            // txtInvoiceAverage
+            // 
+            this.txtInvoiceAverage.BackColor = System.Drawing.Color.DimGray;
+            this.txtInvoiceAverage.ForeColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.txtInvoiceAverage, "txtInvoiceAverage");
+            this.txtInvoiceAverage.Name = "txtInvoiceAverage";
+            this.txtInvoiceAverage.ReadOnly = true;
+            this.txtInvoiceAverage.TabStop = false;
+            // 
             // InvoiceTotal
             // 
             this.AcceptButton = this.btnCalculate;
@@ -121,6 +195,15 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.CancelButton = this.btnExit;
+            this.Controls.Add(this.txtInvoiceAverage);
+            this.Controls.Add(this.txtTotalInvoices);
+            this.Controls.Add(this.txtNumInvoices);
+            this.Controls.Add(this.txtEnterSubtotal);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtDiscountAmount);
@@ -152,6 +235,15 @@
         private System.Windows.Forms.TextBox txtDiscountAmount;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txtEnterSubtotal;
+        private System.Windows.Forms.TextBox txtNumInvoices;
+        private System.Windows.Forms.TextBox txtTotalInvoices;
+        private System.Windows.Forms.TextBox txtInvoiceAverage;
     }
 }
 

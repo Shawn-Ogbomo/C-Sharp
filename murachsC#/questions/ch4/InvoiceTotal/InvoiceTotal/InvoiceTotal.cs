@@ -5,14 +5,28 @@ namespace InvoiceTotal
 {
     public partial class InvoiceTotal : Form
     {
+        //public members
         public InvoiceTotal()
         {
             InitializeComponent();
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        //private members
+        private static int invoiceCount = 0;
+
+        private static void IncrementInvoiceCount()
         {
-            var subtotal = Decimal.Parse(txtSubtotal.Text);
+            ++invoiceCount;
+        }
+
+        private static void ResetInvoiceCount()
+        {
+            invoiceCount = 0;
+        }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+            var subtotal = Decimal.Parse(txtEnterSubtotal.Text);
             decimal discountPercent = 0m;
 
             if (subtotal >= 100 && subtotal < 250)
@@ -32,15 +46,27 @@ namespace InvoiceTotal
             decimal invoiceTotal = Decimal.Round(subtotal - discountAmount, 2);
 
             txtDiscountPercent.Text = discountPercent.ToString("p1");
-            txtDiscountAmount.Text = discountAmount.ToString();
-            txtTotal.Text = invoiceTotal.ToString();
+            txtDiscountAmount.Text = discountAmount.ToString("c");
+            txtTotal.Text = invoiceTotal.ToString("c");
+            txtSubtotal.Text = subtotal.ToString("c");
+
+            IncrementInvoiceCount();
+            txtNumInvoices.Text = invoiceCount.ToString();
 
             txtSubtotal.Focus();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            txtNumInvoices.Text = "";
+            txtTotalInvoices.Text = "";
+            txtInvoiceAverage.Text = "";
+            ResetInvoiceCount();
         }
     }
 }

@@ -139,7 +139,7 @@
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>&amp;Subtotal:</value>
+    <value>Subtotal:</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>18</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -214,16 +214,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 294</value>
+    <value>331, 285</value>
   </data>
   <data name="btnCalculate.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 32</value>
   </data>
   <data name="btnCalculate.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="btnCalculate.Text" xml:space="preserve">
     <value>&amp;Calculate</value>
@@ -238,10 +238,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCalculate.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>15</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 294</value>
+    <value>621, 285</value>
   </data>
   <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 32</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
   <data name="txtSubtotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 68</value>
@@ -283,7 +283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtSubtotal.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>13</value>
   </data>
   <data name="txtDiscountPercent.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 121</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtDiscountPercent.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>12</value>
   </data>
   <data name="txtDiscountAmount.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 169</value>
@@ -325,7 +325,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtDiscountAmount.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 214</value>
@@ -346,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -379,6 +379,234 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 68</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Number of invoices</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 114</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Total of invoices</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 163</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Invoice average</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 28</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 21</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Enter &amp;SubTotal:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 285</value>
+  </data>
+  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 32</value>
+  </data>
+  <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear Totals</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtEnterSubtotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 20</value>
+  </data>
+  <data name="txtEnterSubtotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="txtEnterSubtotal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtEnterSubtotal.Name" xml:space="preserve">
+    <value>txtEnterSubtotal</value>
+  </data>
+  <data name="&gt;&gt;txtEnterSubtotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEnterSubtotal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtEnterSubtotal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtNumInvoices.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 68</value>
+  </data>
+  <data name="txtNumInvoices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="txtNumInvoices.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtNumInvoices.Name" xml:space="preserve">
+    <value>txtNumInvoices</value>
+  </data>
+  <data name="&gt;&gt;txtNumInvoices.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNumInvoices.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtNumInvoices.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtTotalInvoices.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 114</value>
+  </data>
+  <data name="txtTotalInvoices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="txtTotalInvoices.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txtTotalInvoices.Name" xml:space="preserve">
+    <value>txtTotalInvoices</value>
+  </data>
+  <data name="&gt;&gt;txtTotalInvoices.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTotalInvoices.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTotalInvoices.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtInvoiceAverage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 160</value>
+  </data>
+  <data name="txtInvoiceAverage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="txtInvoiceAverage.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtInvoiceAverage.Name" xml:space="preserve">
+    <value>txtInvoiceAverage</value>
+  </data>
+  <data name="&gt;&gt;txtInvoiceAverage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtInvoiceAverage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtInvoiceAverage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -388,7 +616,7 @@
     <value>10, 21</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>466, 405</value>
+    <value>732, 369</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 12pt</value>
