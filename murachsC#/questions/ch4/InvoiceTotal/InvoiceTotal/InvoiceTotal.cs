@@ -16,7 +16,8 @@ namespace InvoiceTotal
 
         private decimal total = 0;
         private decimal maxInvoice = 0;
-        private decimal totalLessDiscount;
+        private decimal minInvoice = Decimal.MaxValue;
+        private decimal totalLessDiscount = 0;
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
@@ -54,6 +55,7 @@ namespace InvoiceTotal
             txtEnterSubtotal.Text = "";
 
             TxtMaxInvoice_TextChanged();
+            TxtMinInvoice_TextChanged();
             txtEnterSubtotal.Focus();
         }
 
@@ -67,8 +69,11 @@ namespace InvoiceTotal
             txtNumInvoices.Text = "";
             txtTotalInvoices.Text = "";
             txtInvoiceAverage.Text = "";
+            txtMaxInvoice.Text = "";
+            txtMinInvoice.Text = "";
             invoiceCount = 0;
             maxInvoice = 0;
+            minInvoice = 0;
             totalLessDiscount = 0;
             total = 0;
         }
@@ -83,8 +88,13 @@ namespace InvoiceTotal
             txtMaxInvoice.Text = maxInvoice.ToString("c");
         }
 
-        private void txtMinInvoice_TextChanged(object sender, EventArgs e)
+        private void TxtMinInvoice_TextChanged()
         {
+            if (totalLessDiscount < minInvoice)
+            {
+                minInvoice = totalLessDiscount;
+            }
+            txtMinInvoice.Text = Decimal.Round(minInvoice, 2).ToString("c");
         }
     }
 }

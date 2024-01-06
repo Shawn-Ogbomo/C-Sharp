@@ -209,7 +209,6 @@
             this.txtMinInvoice.Name = "txtMinInvoice";
             this.txtMinInvoice.ReadOnly = true;
             this.txtMinInvoice.TabStop = false;
-            this.txtMinInvoice.TextChanged += new System.EventHandler(this.txtMinInvoice_TextChanged);
             // 
             // txtMaxInvoice
             // 
