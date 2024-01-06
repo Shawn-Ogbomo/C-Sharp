@@ -286,7 +286,7 @@
     <value>17</value>
   </data>
   <data name="txtDiscountPercent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 121</value>
+    <value>215, 116</value>
   </data>
   <data name="txtDiscountPercent.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 29</value>
@@ -307,7 +307,7 @@
     <value>16</value>
   </data>
   <data name="txtDiscountAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 169</value>
+    <value>215, 164</value>
   </data>
   <data name="txtDiscountAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 29</value>
@@ -328,7 +328,7 @@
     <value>15</value>
   </data>
   <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 214</value>
+    <value>215, 212</value>
   </data>
   <data name="txtTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 29</value>

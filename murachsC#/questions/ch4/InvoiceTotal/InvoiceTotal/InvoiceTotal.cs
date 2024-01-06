@@ -15,11 +15,13 @@ namespace InvoiceTotal
         private int invoiceCount = 0;
 
         private decimal total = 0;
+        private decimal maxInvoice = 0;
+        private decimal totalLessDiscount;
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
             var subtotal = Decimal.Parse(txtEnterSubtotal.Text);
-            decimal discountPercent = 0m;
+            var discountPercent = 0m;
 
             if (subtotal >= 100 && subtotal < 250)
             {
@@ -35,21 +37,23 @@ namespace InvoiceTotal
             }
 
             var discountAmount = Decimal.Round(subtotal * discountPercent, 2);
-            var invoiceTotal = Decimal.Round(subtotal - discountAmount, 2);
+            totalLessDiscount = Decimal.Round(subtotal - discountAmount, 2);
 
             txtDiscountPercent.Text = discountPercent.ToString("p1");
             txtDiscountAmount.Text = discountAmount.ToString("c");
-            txtTotal.Text = invoiceTotal.ToString("c");
+            txtTotal.Text = totalLessDiscount.ToString("c");
             txtSubtotal.Text = subtotal.ToString("c");
 
             ++invoiceCount;
             txtNumInvoices.Text = invoiceCount.ToString();
 
-            total += invoiceTotal;
+            total += totalLessDiscount;
             txtTotalInvoices.Text = total.ToString("c");
 
             txtInvoiceAverage.Text = (total / invoiceCount).ToString("c");
             txtEnterSubtotal.Text = "";
+
+            TxtMaxInvoice_TextChanged();
             txtEnterSubtotal.Focus();
         }
 
@@ -64,11 +68,19 @@ namespace InvoiceTotal
             txtTotalInvoices.Text = "";
             txtInvoiceAverage.Text = "";
             invoiceCount = 0;
+            maxInvoice = 0;
+            totalLessDiscount = 0;
             total = 0;
         }
 
-        private void txtMaxInvoice_TextChanged(object sender, EventArgs e)
+        private void TxtMaxInvoice_TextChanged()
         {
+            if (totalLessDiscount > maxInvoice)
+            {
+                maxInvoice = totalLessDiscount;
+            }
+
+            txtMaxInvoice.Text = maxInvoice.ToString("c");
         }
 
         private void txtMinInvoice_TextChanged(object sender, EventArgs e)

@@ -219,7 +219,6 @@
             this.txtMaxInvoice.Name = "txtMaxInvoice";
             this.txtMaxInvoice.ReadOnly = true;
             this.txtMaxInvoice.TabStop = false;
-            this.txtMaxInvoice.TextChanged += new System.EventHandler(this.txtMaxInvoice_TextChanged);
             // 
             // InvoiceTotal
             // 
