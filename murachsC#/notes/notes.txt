@@ -112,3 +112,149 @@ and select the Surround With command from the resulting menu. Then, select the
 appropriate snippet. 
 
 
+//CH4
+- use var to let the type of the variable to be inferred from the values 
+that are assigned to them. Useful for working with tuple
+
+-Use camelCase in C#
+
+- use Pascal notation for constants 
+eg const int MaxCards = 52
+
+built-in data type - types provided by the C# language
+int, double , char,  bool, etc...
+
+bit - binary digit. 0 or 1 
+
+byte - set of bits. 8 bits. A unit of memory
+
+integer - data type, holds an integral value
+
+Unicode character set -  
+
+ascii character set - code that is used to represent a character
+
+boolean value - true or false 
+
+varaible - name object
+
+constant - immutable object 
+
+declare a variable or constant - var x = 7 const int x = 7
+
+camel notation - each word starts with an upper case letter after the first 
+
+digit seperator - _ used to improve the readability of an integral value 
+
+pascal notation - each word starts with an upper case letter, even the first 
+common naming convention for contansts 
+
+literal - r value literal value int x = 7 the value 7 is the literal 
+
+scientific notation - e syntax used to represent a number 
+values may be converted into scientific notation if they are too large
+
+aritmetic expression - x * y 
+
+arithmetic operators - ^ * - + / % 
+
+operand - left or right of the operator 
+
+binary operator - take two operands 
+
+unary operator  - takes one operand 
+
+prefix an operand - --object ++object
+
+postfix an operand object-- ++object 
+
+assignment statement - int x = 7, x = 11 
+
+assignment operator - operator = 
+
+order of precedence - order in which expressions are evaluated 
+
+casting - converting one type to another type 
+
+implicit cast - compiler does the conversion secretly 
+eg assignning a double to an int object, the double is truncated 
+as a result 
+
+widening conversion - assignning a smaller value to a larger type 
+the smaller value is converted to that type eg 
+assigning an int to a double object 
+
+explicit cast - the programmer explicitly does the conversion
+(double)7.7
+
+strict type semantics - an explicit cast is required to perform a narrowing conversion
+
+static method - static methods do not require an instance of a class to be used
+they can be accessed by the . operator and the class name 
+
+argument - passed into functions 
+
+precision - amount of digits to display after the decimal 
+
+bankers rounding - if the number ends in 5  it is always rounded to an even number. 
+Used to circumvent rounding issues 
+
+instance method - member function within a class interface 
+
+instantiation -declaring an instance of a class 
+eg Point x;
+
+pseudorandom number - random integral values that is calculated on a seed
+unix time, not real random 
+
+seed value - calculated on unix time 
+
+string - type, array of characters. Comprises manifold methods 
+
+string literal - anything that is between " " 
+
+null value- vlaue is unknown 
+
+empty string - ""
+
+concatinate strings - joining two strings using operator + or += 
+
+escape sequence - \n \t \r \\ \"
+
+verbatim string literal - appending a string literal to a string using @
+is used for file paths 
+
+structure - supports a built in data type, name for the type 
+c# keywords such as int long float double bool etc.. are aliases for the 
+structure 
+
+value type - structures hold store their own data 
+
+reference type - does not store the data itself. It stores a reference
+to the area of memory where the data is stored 
+
+scope - region of a program
+
+class scope - regiono within a class 
+
+class variable - variable within the class 
+
+method scope- region within a code block or parameter list 
+
+lifetime - lifetime of object before deallocation
+
+enumeration - enum type , used when you need a set of related constants 
+such as up down left right on off red blue green 
+
+member - data in class declaration. accessable using the .(dot) operator
+
+nullable type - allows you to store a null value in a value type . C# feature
+
+nullable value type -using (?) after the type in the declaration of a value type
+
+null-coalescing operator - tests the value of a nullable type, usable with 
+reference types and nullable value types, since reference types are null 
+by default 
+
+null coalescing assignment operator - assigning a value to an object 
+only if its value is null 
