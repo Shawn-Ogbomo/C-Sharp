@@ -75,7 +75,7 @@
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 16;
             this.btnExit.Text = "E&xit";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // btnCalculate
             // 
@@ -84,7 +84,7 @@
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 15;
             this.btnCalculate.Text = "&Calculate";
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // txtSubtotal
             // 

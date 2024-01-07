@@ -10,49 +10,57 @@ namespace InvoiceTotal
             InitializeComponent();
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            string customerType = txtCustomerType.Text;
+            string customerType = txtCustomerType.Text.ToUpper();
             decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
             decimal discountPercent = .0m;
 
-            if (customerType == "R" || customerType == "r")
+            switch (customerType)
             {
-                if (subtotal < 100)
-                {
-                    discountPercent = .0m;
-                }
-                else if (subtotal >= 100 && subtotal < 250)
-                {
-                    discountPercent = .1m;
-                }
-                else if (subtotal >= 250 && subtotal < 500)
-                {
-                    discountPercent = .25m;
-                }
-                else
-                {
-                    discountPercent = .30m;
-                }
-            }
-            else if (customerType == "C" || customerType == "c")
-            {
-                discountPercent = .2m;
-            }
-            else if (customerType == "T" || customerType == "t")
-            {
-                if (subtotal < 500)
-                {
-                    discountPercent = .4m;
-                }
-                else
-                {
-                    discountPercent = .5m;
-                }
-            }
-            else
-            {
-                discountPercent = .1m;
+                case "R":
+                    {
+                        if (subtotal < 100)
+                        {
+                            discountPercent = .0m;
+                        }
+                        else if (subtotal >= 100 && subtotal < 250)
+                        {
+                            discountPercent = .1m;
+                        }
+                        else if (subtotal >= 250 && subtotal < 500)
+                        {
+                            discountPercent = .25m;
+                        }
+                        else
+                        {
+                            discountPercent = .30m;
+                        }
+                        break;
+                    }
+                case "C":
+                    {
+                        discountPercent = .2m;
+                        break;
+                    }
+
+                case "T":
+                    {
+                        if (subtotal < 500)
+                        {
+                            discountPercent = .4m;
+                        }
+                        else
+                        {
+                            discountPercent = .5m;
+                        }
+                        break;
+                    }
+                default:
+                    {
+                        discountPercent = .1m;
+                        break;
+                    }
             }
 
             decimal discountAmount = subtotal * discountPercent;
@@ -65,7 +73,7 @@ namespace InvoiceTotal
             txtCustomerType.Focus();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
