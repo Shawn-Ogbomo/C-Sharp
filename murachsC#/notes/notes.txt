@@ -258,3 +258,7 @@ by default
 
 null coalescing assignment operator - assigning a value to an object 
 only if its value is null 
+
+//CH5 
+
+boolean expression - an expression that evaluates to true or false
