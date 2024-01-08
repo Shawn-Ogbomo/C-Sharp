@@ -9,8 +9,9 @@ namespace FutureValue
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, System.EventArgs e)
+        private void btnExit_Click(object sender, System.EventArgs e)
         {
+            this.Close();
         }
     }
 }
