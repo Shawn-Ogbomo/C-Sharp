@@ -25,7 +25,7 @@ namespace FutureValue
 
                 if (monthlyInvestment < 0 || interestRate < 0 || years < 0)
                 {
-                    throw new FormatException("Oops invalid format");
+                    throw new FormatException("No negative values...");
                 }
 
                 var futureValue = 0d;
@@ -36,6 +36,7 @@ namespace FutureValue
                 }
 
                 txtFutureValue.Text = futureValue.ToString("c");
+                txtError.Visible = false;
             }
             catch (System.FormatException internal_e)
             {
