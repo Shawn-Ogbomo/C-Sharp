@@ -38,12 +38,14 @@
             this.txtFutureValue = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtError = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 26);
+            this.label1.Location = new System.Drawing.Point(62, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 21);
@@ -53,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 140);
+            this.label2.Location = new System.Drawing.Point(62, 164);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 21);
@@ -63,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 102);
+            this.label3.Location = new System.Drawing.Point(62, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 21);
@@ -73,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 64);
+            this.label4.Location = new System.Drawing.Point(62, 88);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(162, 21);
@@ -83,31 +85,34 @@
             // txtMonthlyInvestment
             // 
             this.txtMonthlyInvestment.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMonthlyInvestment.Location = new System.Drawing.Point(240, 18);
+            this.txtMonthlyInvestment.Location = new System.Drawing.Point(278, 42);
             this.txtMonthlyInvestment.Name = "txtMonthlyInvestment";
             this.txtMonthlyInvestment.Size = new System.Drawing.Size(100, 29);
-            this.txtMonthlyInvestment.TabIndex = 4;
+            this.txtMonthlyInvestment.TabIndex = 0;
+            this.txtMonthlyInvestment.TextChanged += new System.EventHandler(this.txtMonthlyInvestment_TextChanged);
             // 
             // txtYears
             // 
             this.txtYears.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtYears.Location = new System.Drawing.Point(240, 94);
+            this.txtYears.Location = new System.Drawing.Point(278, 118);
             this.txtYears.Name = "txtYears";
             this.txtYears.Size = new System.Drawing.Size(100, 29);
             this.txtYears.TabIndex = 5;
+            this.txtYears.TabStop = false;
             // 
             // txtInterestRate
             // 
             this.txtInterestRate.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtInterestRate.Location = new System.Drawing.Point(240, 56);
+            this.txtInterestRate.Location = new System.Drawing.Point(278, 80);
             this.txtInterestRate.Name = "txtInterestRate";
             this.txtInterestRate.Size = new System.Drawing.Size(100, 29);
             this.txtInterestRate.TabIndex = 6;
+            this.txtInterestRate.TabStop = false;
             // 
             // txtFutureValue
             // 
             this.txtFutureValue.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtFutureValue.Location = new System.Drawing.Point(240, 132);
+            this.txtFutureValue.Location = new System.Drawing.Point(278, 156);
             this.txtFutureValue.Name = "txtFutureValue";
             this.txtFutureValue.ReadOnly = true;
             this.txtFutureValue.Size = new System.Drawing.Size(100, 29);
@@ -116,10 +121,11 @@
             // 
             // btnCalculate
             // 
+            this.btnCalculate.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCalculate.Location = new System.Drawing.Point(117, 211);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(96, 30);
-            this.btnCalculate.TabIndex = 8;
+            this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
@@ -129,10 +135,30 @@
             this.btnExit.Location = new System.Drawing.Point(240, 211);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 30);
-            this.btnExit.TabIndex = 9;
+            this.btnExit.TabIndex = 2;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // txtError
+            // 
+            this.txtError.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtError.Location = new System.Drawing.Point(79, 263);
+            this.txtError.Name = "txtError";
+            this.txtError.Size = new System.Drawing.Size(281, 29);
+            this.txtError.TabIndex = 10;
+            this.txtError.TabStop = false;
+            this.txtError.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(121, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(215, 21);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Shawn\'s FutureValue Form";
             // 
             // Form1
             // 
@@ -142,6 +168,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(441, 322);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtError);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtFutureValue);
@@ -159,6 +187,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FutureValue";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,6 +205,8 @@
         private System.Windows.Forms.TextBox txtFutureValue;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtError;
+        private System.Windows.Forms.Label label5;
     }
 }
 

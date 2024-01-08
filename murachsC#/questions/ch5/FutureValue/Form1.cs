@@ -13,5 +13,15 @@ namespace FutureValue
         {
             this.Close();
         }
+
+        private void txtMonthlyInvestment_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
