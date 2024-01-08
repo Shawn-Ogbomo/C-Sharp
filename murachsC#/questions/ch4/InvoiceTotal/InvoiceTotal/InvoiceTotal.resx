@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -156,6 +159,9 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -186,6 +192,9 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
+  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -216,6 +225,9 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+  <metadata name="btnCalculate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
     <value>331, 285</value>
   </data>
@@ -240,6 +252,9 @@
   <data name="&gt;&gt;btnCalculate.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <metadata name="btnExit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
     <value>621, 285</value>
   </data>
@@ -264,6 +279,9 @@
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <metadata name="txtSubtotal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtSubtotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 68</value>
   </data>
@@ -285,6 +303,9 @@
   <data name="&gt;&gt;txtSubtotal.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <metadata name="txtDiscountPercent.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtDiscountPercent.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 116</value>
   </data>
@@ -306,6 +327,9 @@
   <data name="&gt;&gt;txtDiscountPercent.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <metadata name="txtDiscountAmount.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtDiscountAmount.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 164</value>
   </data>
@@ -327,6 +351,9 @@
   <data name="&gt;&gt;txtDiscountAmount.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <metadata name="txtTotal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 212</value>
   </data>
@@ -348,6 +375,9 @@
   <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <metadata name="label4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -381,6 +411,9 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -408,6 +441,9 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <metadata name="label6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -438,6 +474,9 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -468,6 +507,9 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -498,6 +540,9 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <metadata name="btnClear.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -525,6 +570,9 @@
   <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <metadata name="txtEnterSubtotal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtEnterSubtotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 20</value>
   </data>
@@ -546,6 +594,9 @@
   <data name="&gt;&gt;txtEnterSubtotal.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="txtNumInvoices.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtNumInvoices.Location" type="System.Drawing.Point, System.Drawing">
     <value>611, 68</value>
   </data>
@@ -567,6 +618,9 @@
   <data name="&gt;&gt;txtNumInvoices.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="txtTotalInvoices.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtTotalInvoices.Location" type="System.Drawing.Point, System.Drawing">
     <value>611, 109</value>
   </data>
@@ -588,6 +642,9 @@
   <data name="&gt;&gt;txtTotalInvoices.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="txtInvoiceAverage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtInvoiceAverage.Location" type="System.Drawing.Point, System.Drawing">
     <value>611, 150</value>
   </data>
@@ -609,6 +666,9 @@
   <data name="&gt;&gt;txtInvoiceAverage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="label9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -639,6 +699,9 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -669,6 +732,9 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="txtMinInvoice.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtMinInvoice.Location" type="System.Drawing.Point, System.Drawing">
     <value>610, 232</value>
   </data>
@@ -690,6 +756,9 @@
   <data name="&gt;&gt;txtMinInvoice.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="txtMaxInvoice.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtMaxInvoice.Location" type="System.Drawing.Point, System.Drawing">
     <value>610, 191</value>
   </data>
@@ -712,6 +781,9 @@
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">

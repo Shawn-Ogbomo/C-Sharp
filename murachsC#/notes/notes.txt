@@ -260,5 +260,85 @@ null coalescing assignment operator - assigning a value to an object
 only if its value is null 
 
 //CH5 
-
 boolean expression - an expression that evaluates to true or false
+
+relational operator - operators such as == != > < >= <=
+
+logical operator - operators such as &&, ||, &, |, !
+
+conditional operator - operators used to code a boolean expressions
+Also called arithmetic if. Prevents us from writing long winded code
+
+
+labda operator - replaces case label in switch statement. Means goto. 
+Only one statement is executed when using it
+
+if else statement - selection statements that control the flow of the code 
+
+if statment - selection statement. If the expression evaluates to true, 
+the code block is executed 
+
+selection structure - if else chain and switch 
+
+block scope - statments within a code block 
+
+nested if statment - an if within another if
+
+switch statement - common control structure, similar to if else chain 
+contains a match condition case labels and a default clause 
+
+match expression - expression that is used to match a case label 
+in a switch statement 
+
+case label - constant expression that if evaluated against a match expression
+if true the code block for the matching case label is excecuted
+
+default label - exucuted when none of the case labels are matched 
+
+break statement - used to exit iteration early or a switch statement to prevent 
+fall through behaviour 
+
+fall through - when the break keyword is ommitted the program jumps to the next statment 
+in the switch. However, C# does not allow this behaviour 
+
+no fall through rule - C# does not permit fallthrough behaviour unless 
+the case label is empty
+
+
+discard - similar to the default clause in the switch control structure
+used with the labda operator 
+
+tenary operator - same as conditional operator 
+
+conditional expression - expressions containing conditional operators 
+evaluates to true or false
+
+iteration structure - for, while, do-while statements 
+
+while statement - while (x< 7)
+
+while loop- while(x<7){
+    console.writeline("Shawn");
+}
+
+do while statement - same as while loop but the do clause is executed once 
+always 
+
+inifinite loop - limitless iteration
+
+for loop - takes two expressions and a prefix or postfix operator 
+
+jump statement- goto keywod. Not recommended sice it is difficult to maintain
+
+continue statment - goes not next iteration 
+
+breakpoint - used to debug errors in code 
+compiler haults execution when a breakpoint is encountered 
+
+margin indicator bar - location to place breakpoints 
+
+execution point - code that is marked with the breakpoint icon 
+
+stepthrough code - executed with the f10 goes to next statement
+
+
