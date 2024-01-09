@@ -341,4 +341,68 @@ execution point - code that is marked with the breakpoint icon
 
 stepthrough code - executed with the f10 goes to next statement
 
+//CH6 
+in keyword - passes object by reference. Read only 
+
+out keyword - passes object by reference. 
+Out keyword can accept a declaration.
+If and object is passed to a function using the out keyword, 
+it must be assigned a value within the callee
+if it is not initialized
+
+ref keyword - passes object to function by reference 
+
+always initialize varaibles so you can use the 
+ref keyword instead the out keyword.
+
+The exception is a function that takes an out parameter 
+you can also use a discard '_' if there is no use for the value 
+
+//TUPLES 
+
+tuple - stores and returns multiple values.
+allow you to define simple data structures containing at least 
+two members similar to enumerations, but the members are public varaibles
+instead of constants
+
+unnamed tuple - tuple declared using the var keyword as the 
+tupel type members of the tuple are enclosed in parentheses and 
+seperated with commas.
+Members of a default tuple are given a default name and must be 
+referenced using the default name. 
+Tuple members are accessed using the . operator and the name of 
+the member.
+
+named tuple - giving your own names to the members of the tuple
+types are infered by the values provided.
+Named tuples are also accessed with the . operator. It is easier to 
+refer to the names of a named tuple than an unnamed tuple 
+
+naming convention for tuple members is pascal notation since 
+they are public members 
+
+deconstructing a tuple - a touple in the caller can be assigned the value of 
+a tuple in a method.
+When using this technique, you don't have to name the tuple 
+in the calling code.
+You can refer to its members directly by name 
+
+if you deconstruct a tuple using the var keyword, 
+you must refer to the members of 
+the tuple using the name of the tuple variable 
+
+you can use a discard if you do not need one or more values 
+that are returned by the tuple
+eg...
+(decimal FutureValue, _) = this.CalculateFutureValue( 
+monthlyInvestment, monthlyInterestRate, months) ; 
+
+you can return multipel vaues with a class or struct also 
+
+classes can contain members that tuples cant. Such as 
+methods and properties
+
+you can assign a tuple that is returned by a method to a single 
+variable, then the members of the tuple have the same names 
+as the members of the return type
 
