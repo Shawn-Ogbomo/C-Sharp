@@ -20,27 +20,57 @@ namespace FutureValue
             try
             {
                 decimal monthlyInvestment = Convert.ToDecimal(txtMonthlyInvestment.Text);
-                decimal interestRate = (Convert.ToDecimal(txtInterestRate.Text) / 12) / 100;
-                int years = Convert.ToInt32(txtYears.Text) * 12;
+                decimal futureValue = 0;
 
-                decimal futureValue = CalculateFutureValue(monthlyInvestment, interestRate, years);
+                bool txtInterestRateEmpty = String.IsNullOrEmpty(txtInterestRate.Text);
+                bool txtYearsEmpty = String.IsNullOrEmpty(txtYears.Text);
+
+                if (txtInterestRateEmpty && txtYearsEmpty)
+                {
+                    futureValue = CalculateFutureValue(monthlyInvestment);
+                    txtInterestRate.Text = "0.05";
+                    txtYears.Text = "12";
+                }
+                else if (!txtInterestRateEmpty && txtYearsEmpty)
+                {
+                    futureValue = CalculateFutureValue(monthlyInvestment, YearInterestToMonth(Convert.ToDecimal(txtInterestRate.Text)));
+                    txtYears.Text = "12";
+                }
+                else if (txtInterestRateEmpty && !txtYearsEmpty)
+                {
+                    futureValue = CalculateFutureValue(monthlyInvestment, months: YearToMon(Convert.ToInt32(txtYears.Text)));
+                    txtInterestRate.Text = "0.05";
+                }
+                else
+                {
+                    futureValue = CalculateFutureValue(monthlyInvestment, YearInterestToMonth(Convert.ToDecimal(txtInterestRate.Text)), YearToMon(Convert.ToInt32(txtYears.Text)));
+                }
+
                 txtFutureValue.Text = futureValue.ToString("c");
-                txtError.Visible = false;
+                txtError.Hide();
                 txtMonthlyInvestment.Focus();
             }
             catch (System.FormatException internal_e)
             {
-                txtError.Visible = true;
                 txtError.Text = internal_e.Message;
+                txtError.Show();
             }
             catch (OverflowException internal_e)
             {
-                txtError.Visible = true;
                 txtError.Text = internal_e.Message;
+                txtError.Show();
             }
         }
 
-        private decimal CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate, int months)
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            txtFutureValue.Text = "";
+            txtInterestRate.Text = "";
+            txtMonthlyInvestment.Text = "";
+            txtYears.Text = "";
+        }
+
+        private decimal CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate = 0.05m, int months = 12)
         {
             if (monthlyInvestment < 0 || monthlyInterestRate < 0 || months < 0)
             {
@@ -55,6 +85,16 @@ namespace FutureValue
             }
 
             return futureValue;
+        }
+
+        private decimal YearInterestToMonth(decimal interestRate)
+        {
+            return Convert.ToDecimal(interestRate) / 12 / 100;
+        }
+
+        private int YearToMon(int numYears)
+        {
+            return numYears * 12;
         }
     }
 }

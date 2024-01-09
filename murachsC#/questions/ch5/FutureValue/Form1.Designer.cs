@@ -40,6 +40,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.txtError = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,10 +131,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(240, 211);
+            this.btnExit.Location = new System.Drawing.Point(188, 247);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 30);
-            this.btnExit.TabIndex = 4;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -142,7 +143,7 @@
             // 
             this.txtError.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtError.Location = new System.Drawing.Point(12, 263);
+            this.txtError.Location = new System.Drawing.Point(12, 283);
             this.txtError.Name = "txtError";
             this.txtError.Size = new System.Drawing.Size(417, 29);
             this.txtError.TabIndex = 10;
@@ -160,6 +161,17 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Shawn\'s FutureValue Form";
             // 
+            // btnClear
+            // 
+            this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClear.Location = new System.Drawing.Point(253, 211);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(96, 30);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnCalculate;
@@ -168,6 +180,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(441, 322);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtError);
             this.Controls.Add(this.btnExit);
@@ -206,6 +219,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtError;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
