@@ -19,22 +19,11 @@ namespace FutureValue
         {
             try
             {
-                var monthlyInvestment = Convert.ToDouble(txtMonthlyInvestment.Text);
-                var interestRate = (Convert.ToDouble(txtInterestRate.Text) / 12) / 100;
-                var years = Convert.ToInt32(txtYears.Text) * 12;
+                decimal monthlyInvestment = Convert.ToDecimal(txtMonthlyInvestment.Text);
+                decimal interestRate = (Convert.ToDecimal(txtInterestRate.Text) / 12) / 100;
+                int years = Convert.ToInt32(txtYears.Text) * 12;
 
-                if (monthlyInvestment < 0 || interestRate < 0 || years < 0)
-                {
-                    throw new FormatException("No negative values...");
-                }
-
-                var futureValue = 0d;
-
-                for (var i = 0; i < years; ++i)
-                {
-                    futureValue = (futureValue + monthlyInvestment) * (1 + interestRate);
-                }
-
+                decimal futureValue = CalculateFutureValue(monthlyInvestment, interestRate, years);
                 txtFutureValue.Text = futureValue.ToString("c");
                 txtError.Visible = false;
                 txtMonthlyInvestment.Focus();
@@ -49,6 +38,23 @@ namespace FutureValue
                 txtError.Visible = true;
                 txtError.Text = internal_e.Message;
             }
+        }
+
+        private decimal CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate, int months)
+        {
+            if (monthlyInvestment < 0 || monthlyInterestRate < 0 || months < 0)
+            {
+                throw new FormatException("No negative values...");
+            }
+
+            decimal futureValue = 0;
+
+            for (int i = 0; i < months; ++i)
+            {
+                futureValue = (futureValue + monthlyInvestment) * (1 + monthlyInterestRate);
+            }
+
+            return futureValue;
         }
     }
 }
