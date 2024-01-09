@@ -406,3 +406,11 @@ you can assign a tuple that is returned by a method to a single
 variable, then the members of the tuple have the same names 
 as the members of the return type
 
+Events / Event Handlers 
+
+code that wires events to event handlers are stored in the 
+Designer.cd file for a form.
+
+delegate - object that represents a method 
+used to wire an event to an event handler
+
